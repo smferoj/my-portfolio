@@ -1,0 +1,101 @@
+#about{
+    min-height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_me {
+  width: 100%;
+  aspect-ratio: 3/4 ;
+  border-radius: 1.5rem;
+  /* background-color: rgb(36, 56, 56); */
+  background: linear-gradient(45deg, transparent,  rgb(36, 56, 56),transparent); 
+  display: grid;
+  place-items: center;
+}
+
+.about_me-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: 0.5s;
+}
+
+.about_me-image:hover{
+    transform: rotate(0)
+}
+
+.about_cards{
+    display: flex;
+    justify-content: space-around;
+    gap:1.2rem
+     
+}
+.about_card{
+    width: 100%;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding:1rem 2rem;
+    text-align: left;
+
+}
+
+.about_card h3{
+    padding: 1rem 0;
+}
+
+.feature_icon{
+    margin-right: 1rem;
+}
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.about_text p{
+ padding-top:1rem;
+ text-align: justify;
+}
+
+.about_content p{
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+.accordion{
+    background-color: transparent!important;
+}
+.accordion-item, .accordion-header{
+    background: transparent;
+}
+
+
+.about_btn{
+    padding-bottom: 1.5rem;
+}
+
+/* =====================================Media (Medium devices)======== */
+
+@media screen and (max-width : 992px){
+    
+    #about{    
+    padding-top: 2.5rem; 
+    }
+   .img_sec {
+    justify-content: center;
+   }
+   .about_cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+
+ 
+
+    }
+    
+    
